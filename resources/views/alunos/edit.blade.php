@@ -4,17 +4,17 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Blog</h2>
+                <h2>Edit Log</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('alunos.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('alunos.index') }}"> Voltar</a>
             </div>
         </div>
     </div>
    
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Warning!</strong> Please check input field code<br><br>
+            <strong>Warning!</strong>Cheque os dados enviados<br><br>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -37,13 +37,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Telefone:</strong>
-                <input type="text" name="telefone" class="form-control" onkeypress="$(this).mask('(00) 0000-00009')>
+                <input type="text" name="telefone" class="form-control">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Cpf:</strong>
-                <input type="text" name="cpf" class="form-control" onkeypress="$(this).mask('000.000.000-00');">
+                <input type="text" name="cpf" class="form-control">
             </div>
         </div>
         
